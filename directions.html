@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>여수 아일랜드 애견동반 펜션 - 오시는길</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="여수 아일랜드 애견동반 펜션 - 오시는길" />
+  <meta property="og:description" content="여수 아일랜드 애견동반 펜션, 오션뷰 복층에서 반려견과 함께하는 특별한 힐링 여행, 개별 바베큐와 일출·일몰의 감동을 가족·커플과 만끽하세요!" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/07/28/DNnsTwI6q0Xj.jpg" />
+  <meta property="og:url" content="https://ysisland.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="여수 아일랜드 애견동반 펜션 - 오시는길" />
+  <meta name="twitter:description" content="여수 아일랜드 애견동반 펜션, 오션뷰 복층에서 반려견과 함께하는 특별한 힐링 여행, 개별 바베큐와 일출·일몰의 감동을 가족·커플과 만끽하세요!" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/07/28/DNnsTwI6q0Xj.jpg" />
+  <meta name="naver-site-verification" content="2b607ec35a42beeb155cab7590fe90abb3fb2f7a" />
+  <meta name="google-site-verification" content="aVcoy5K1O9YAd_QypKv7Fwx6JfSyxsK8oUPsICy1fxM" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <!-- 원본 traffic.html (#content.sub5_1). 슬라이더가 없는 정적 페이지다. -->
+        <section id="content" class="sub5_1 sub_traffic">
+          <!-- ── 히어로 — 슬라이더가 아닌 고정 배경 ──────────────── -->
+          <div class="sub_visual_wide" data-directions-hero>
+            <div class="visual_box">
+              <div class="visual_txt">
+                <strong>LOCATION</strong>
+                <p data-directions-hero-description></p>
+              </div>
+            </div>
+          </div>
+          <!--// sub_visual -->
+
+          <div class="sub_location_wrap">
+            <div class="inner">
+              <ul class="location_box">
+                <li>홈</li>
+                <li>LOCATION</li>
+                <li><a href="./directions.html">오시는 길</a></li>
+              </ul>
+              <ul class="cate_box">
+                <li class="on"><a href="./directions.html">오시는길</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sub_cont">
+            <div class="sub_title_box">
+              <h3 data-directions-title></h3>
+              <p data-directions-lead></p>
+            </div>
+
+            <div class="map_box">
+              <!-- 원본은 daum roughmap 퍼가기 스크립트를 넣었다. 업체 고유 key 가
+                   필요해 데이터로 만들 수 없어 Kakao Maps SDK 로 대체했다.
+                   .map_inner 는 padding-bottom 비율 상자라 #kakao-map 이 absolute 로 채운다. -->
+              <div class="map_inner">
+                <div id="kakao-map"></div>
+              </div>
+            </div>
+
+            <div class="map_info inner">
+              <strong data-directions-address></strong>
+              <dl data-directions-notice></dl>
+            </div>
+          </div>
+          <!--// sub_cont -->
+        </section>
+      </div>
+      <!--// container -->
+
+      <div id="footer-wrap"></div>
+    </div>
+
+    <div id="popup-container"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/kakao-maps-sdk.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/directions-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
